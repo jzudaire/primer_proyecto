@@ -1,0 +1,137 @@
+/* HOJA DE ESTILO CSS */
+/* Definicion del cuerpo */
+body {
+	margin:0;
+	padding:0;
+	color:white;
+	background-color:grey;
+	font-family: Arial, Gadget, sans-serif;
+}
+/* Definicion de caja CABECERA */
+.cabecera {
+	height:250px;
+	background-image:url(background-header.png);
+	background-size:cover;
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+}
+/* Titulo de la cabecera */
+.cabecera h1 {
+	overflow:auto;
+	height:200px;
+	font-size:4em;
+	text-align:center;
+}
+/* Menu de la cabecera */
+.cabecera ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+/* Elementos del menu */
+.cabecera ul li {
+	background-color:transparent;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+/* Enlaces del menu */
+.cabecera a {
+	display:block;
+	color:white;
+	text-decoration:none;
+	font-size:15px;
+	padding:20px;
+	border-bottom:1px solid white;
+}
+/* Efecto del ratón sobre los elementos del menu */
+.cabecera a:hover {
+	color:black;
+	background:white;
+	transition:background 1s linear;
+}
+/* Menu desplegable de 2o nivel */
+.cabecera ul ul {
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:transparent;
+	padding:0;
+}
+/* Elementos del menu desplegable */
+.cabecera ul ul li {
+	float:none;
+	width:177px;
+	text-align:center;
+}
+/* Efecto del ratón sobre los elementos del menu */
+.cabecera ul li:hover > ul {
+	display:block;
+	color:black;
+}
+/* Definicion de la caja BARRA LATERAL */
+.barralateral {
+	background-image:url(marmol02.jpg);
+	float:left;
+	width:5%;
+	height:430px;
+}
+/* Elementos de la barra lateral */
+.barralateral a {
+	display:block;
+	color:grey;
+	width:64px;
+	height:64px;
+	margin-top:6px;
+	margin-left:6px;
+}
+/* Iconos de barra lateral */
+a.email {background:url(icon_email.png) no-repeat;}
+a.facebook {background:url(icon_facebook.png) no-repeat;}
+a.twitter {background:url(icon_twitter.png) no-repeat;}
+a.instagram {background:url(icon_instagram.png) no-repeat;}
+a.pinterest {background:url(icon_pinterest.png) no-repeat;}
+a.linkedin {background:url(icon_linkedin.png) no-repeat;}
+
+/* Efecto del ratón sobre los elementos de la barra */
+.barralateral a:hover {
+	opacity:0.5;
+}
+/* Definicion de la caja CONTENIDO */
+.contenido {
+	float:left;
+	width:85%;
+	padding:5%;
+}
+/* Parrafos de CONTENIDO */
+.contenido p {
+	line-height:125%;
+	font-size:125%;
+}
+/* Imagenes de CONTENIDO */
+.contenido img {
+	float:right;
+	margin-left:50px;
+}
+/* Tabla de CONTENIDO */
+.contenido table {
+	font-size:150%;
+}
+/* Borde para todos los elementos de la tabla */
+.contenido table, td, th {
+	border:white 1px solid;}
+/* Cabecera de la tabla */
+.contenido th {
+	background:black;
+}
+/* Definicion de la caja PIE */
+.pie {
+	float:left;
+	width:100%;
+	height:50px;
+	text-align:center;
+	background-color:black;
+	border-top:1px solid white;
+}
